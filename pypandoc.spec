@@ -4,7 +4,7 @@
 #
 Name     : pypandoc
 Version  : 1.4
-Release  : 9
+Release  : 10
 URL      : https://pypi.debian.net/pypandoc/pypandoc-1.4.tar.gz
 Source0  : https://pypi.debian.net/pypandoc/pypandoc-1.4.tar.gz
 Summary  : Thin wrapper for pandoc.
