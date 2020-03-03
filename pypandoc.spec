@@ -4,7 +4,7 @@
 #
 Name     : pypandoc
 Version  : 1.4
-Release  : 17
+Release  : 18
 URL      : https://pypi.debian.net/pypandoc/pypandoc-1.4.tar.gz
 Source0  : https://pypi.debian.net/pypandoc/pypandoc-1.4.tar.gz
 Summary  : Thin wrapper for pandoc.
@@ -23,10 +23,14 @@ BuildRequires : setuptools
 BuildRequires : wheel
 
 %description
-========
-        
-        |Build Status| |Appveyor Build Status| |GitHub Releases| |PyPI version|
-        |conda version| |Development Status| |Python version| |License|
+# pypandoc
+[![Build Status](https://travis-ci.org/bebraw/pypandoc.svg?branch=master)](https://travis-ci.org/bebraw/pypandoc)
+[![Appveyor Build Status](https://ci.appveyor.com/api/projects/status/github/bebraw/pypandoc?svg=true)](https://ci.appveyor.com/project/bebraw/pypandoc)
+[![GitHub Releases](https://img.shields.io/github/tag/bebraw/pypandoc.svg?label=github+release)](https://github.com/bebraw/pypandoc/releases)
+[![PyPI version](https://badge.fury.io/py/pypandoc.svg)](https://pypi.python.org/pypi/pypandoc/)
+[![conda version](https://anaconda.org/conda-forge/pypandoc/badges/version.svg)](https://anaconda.org/conda-forge/pypandoc/)
+[![Development Status](https://img.shields.io/pypi/status/pypandoc.svg)](https://pypi.python.org/pypi/pypandoc/)
+[![Python version](https://img.shields.io/pypi/pyversions/pypandoc.svg)](https://pypi.python.org/pypi/pypandoc/)
 
 %package license
 Summary: license components for the pypandoc package.
@@ -49,6 +53,7 @@ python components for the pypandoc package.
 Summary: python3 components for the pypandoc package.
 Group: Default
 Requires: python3-core
+Provides: pypi(pypandoc)
 
 %description python3
 python3 components for the pypandoc package.
@@ -63,7 +68,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1574288435
+export SOURCE_DATE_EPOCH=1583208498
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
